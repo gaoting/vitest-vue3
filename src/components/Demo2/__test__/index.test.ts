@@ -28,7 +28,7 @@ describe("Demo2", () => {
       }  
     });  
   
-    await wrapper.setProps({ name: "Lunaaa" });
+    await wrapper.setProps({ name: "Luna" });
     expect(wrapper.find('.error').exists()).toBeTruthy();
     expect(wrapper.find('.error').text()).toEqual('Please enter a name with at least seven letters.');  
   }); 
