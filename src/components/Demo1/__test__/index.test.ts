@@ -1,7 +1,7 @@
 import { mount } from "@vue/test-utils";
 import { describe, expect, test } from "vitest";
 
-import Demo1 from "../components/Demo1.vue";
+import Demo1 from "../index.vue";
 
 describe("Demo1", () => {
   test("demo mounted", async () => {

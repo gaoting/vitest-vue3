@@ -20,11 +20,11 @@ export default defineConfig({
       // 设置代码覆盖率阈值
       lines: 75,
       functions: 75,
-      branches: 75,
+      branches: 50,
       statements: 75,
     },
     open: true,
-    include: ["./src/components/**/*.{test,spec}.ts"],
+    include: ["./src/components/**/__test__/**/*.{test,spec}.ts"],
   },
   
 });

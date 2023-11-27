@@ -3,9 +3,9 @@
     <div class="message">
       {{ message }}
     </div>
-    Enter your username: <input :value="name" />
+    Enter your name: <input :value="name" />
     <div v-if="error" class="error">
-      Please enter a username with at least seven letters.
+      Please enter a name with at least seven letters.
     </div>
   </div>
 </template>
@@ -16,17 +16,17 @@ import { computed } from "vue";
 const props = withDefaults(
   defineProps<{
     message: string;
-    username: string;
+    name: string;
   }>(),
   {
     message: "",
-    username: "",
+    name: "",
   }
 );
 
-const name = computed(() => props.username);
+const name = computed(() => props.name);
 
 const error = computed(() => {
-  return props.username.trim().length < 7;
+  return props.name.trim().length < 200;
 });
 </script>
